@@ -18,7 +18,7 @@ export default function Footer() {
               height={32}
               className="object-contain"
             />
-            <span className="text-base font-semibold text-[#35AFF4]">NaraaCare</span>
+            <span className="text-base font-semibold text-[#35AFF4] leading-none">NaraaCare</span>
           </Link>
 
           {/* Links */}

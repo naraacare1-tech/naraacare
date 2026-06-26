@@ -20,13 +20,13 @@ export default function Navbar() {
           <Image
             src={logoSrc}
             alt="NaraaCare"
-            width={40}
-            height={40}
+            width={30}
+            height={30}
             priority
             className="object-contain"
           />
 
-          <span className="text-[#35AFF4] font-semibold text-xl">
+          <span className="text-[#35AFF4] font-semibold text-xl leading-none">
             NaraaCare
           </span>
         </Link>
