@@ -10,7 +10,7 @@ export default function TermsOfService() {
         <h1 className="text-3xl font-bold text-gray-900 text-center mb-2">
           Terms of Service
         </h1>
-        <div className="w-16 h-1 bg-blue-500 mx-auto rounded-full mb-10" />
+        <div className="w-16 h-1 bg-[#35AFF4] mx-auto rounded-full mb-10" />
 
         {[
           {

@@ -71,14 +71,14 @@ export default function CTA() {
 
   return (
     <section className="py-16 px-6 bg-white">
-      <div className="max-w-4xl mx-auto bg-blue-50 rounded-3xl px-8 py-14 text-center flex flex-col items-center gap-6">
+      <div className="max-w-4xl mx-auto bg-sky-50 rounded-3xl px-8 py-14 text-center flex flex-col items-center gap-6">
 
         {/* Heading */}
         <div>
-          <h2 className="text-2xl lg:text-5xl font-bold text-gray-900 leading-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
             Be part of the
           </h2>
-          <h2 className="text-2xl lg:text-5xl font-bold text-blue-500 leading-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-[#35AFF4] leading-tight">
             first version of you.
           </h2>
         </div>
@@ -91,7 +91,7 @@ export default function CTA() {
 
         {/* Form */}
         {submitted ? (
-          <div className="bg-white border border-blue-200 text-blue-700 px-6 py-4 rounded-2xl text-sm font-medium w-full">
+          <div className="bg-white border border-sky-200 text-[#35AFF4] px-6 py-4 rounded-2xl text-sm font-medium w-full">
             🎉 You are on the list! We will be in touch soon.
           </div>
         ) : (
@@ -106,11 +106,11 @@ export default function CTA() {
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="your@email.com"
                 required
-                className="flex-1 px-5 py-3.5 rounded-full border border-gray-200 bg-white text-sm text-gray-700 placeholder-gray-400 outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-100 transition"
+                className="flex-1 px-5 py-3.5 rounded-full border border-gray-200 bg-white text-sm text-gray-700 placeholder-gray-400 outline-none focus:border-[#35AFF4] focus:ring-2 focus:ring-sky-100 transition"
               />
               <button
                 type="submit"
-                className="flex items-center justify-center gap-2 bg-blue-500 hover:bg-blue-600 text-white text-sm font-medium px-4 py-3.5 rounded-full transition-colors duration-200 whitespace-nowrap"
+                className="flex items-center justify-center gap-2 bg-[#35AFF4] hover:bg-[#35AFF4]/90 text-white text-sm font-medium px-4 py-3.5 rounded-full transition-colors duration-200 whitespace-nowrap"
               >
                 Reserve my spot
                 <ArrowRight size={16} />
@@ -174,8 +174,7 @@ export default function CTA() {
               className="text-gray-400 hover:text-blue-600 transition"
             >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/>
-                <circle cx="4" cy="4" r="2"/>
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
               </svg>
             </a>
           </div>

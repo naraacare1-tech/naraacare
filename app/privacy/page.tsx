@@ -10,7 +10,7 @@ export default function PrivacyPolicy() {
         <h1 className="text-3xl font-bold text-gray-900 text-center mb-2">
           Privacy Policy
         </h1>
-        <div className="w-16 h-1 bg-blue-500 mx-auto rounded-full mb-10" />
+        <div className="w-16 h-1 bg-[#35AFF4] mx-auto rounded-full mb-10" />
 
         <p className="text-gray-500 text-sm leading-relaxed mb-4">
           Your privacy is important to us. This Privacy Policy explains what data NaraaCare

@@ -12,7 +12,7 @@ export default function Features() {
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-3">
             What NaraaCare Does
           </h2>
-          <div className="w-16 h-1 bg-blue-500 mx-auto rounded-full" />
+          <div className="w-16 h-1 bg-[#35AFF4] mx-auto rounded-full" />
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -23,7 +23,7 @@ export default function Features() {
             {/* Care Circle */}
             <div className="border border-gray-200 rounded-2xl p-6 flex flex-col gap-3">
               <div className="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center">
-                <Users size={20} className="text-blue-500" />
+                <Users size={20} className="text-[#35AFF4]" />
               </div>
               <h3 className="text-lg font-bold text-gray-900">Care Circle</h3>
               <p className="text-gray-500 text-sm leading-relaxed">
@@ -44,7 +44,7 @@ export default function Features() {
             {/* Micro Tracking */}
             <div className="border border-gray-200 rounded-2xl p-6 flex flex-col gap-3">
               <div className="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center">
-                <TrendingUp size={20} className="text-blue-500" />
+                <TrendingUp size={20} className="text-[#35AFF4]" />
               </div>
               <h3 className="text-lg font-bold text-gray-900">Micro Tracking</h3>
               <p className="text-gray-500 text-sm leading-relaxed">
@@ -57,7 +57,7 @@ export default function Features() {
             {/* Rin AI */}
             <div className="border border-gray-200 rounded-2xl p-6 flex flex-col gap-3">
               <div className="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center">
-                <MessageCircle size={20} className="text-blue-500" />
+                <MessageCircle size={20} className="text-[#35AFF4]" />
               </div>
               <h3 className="text-lg font-bold text-gray-900">Rin AI</h3>
               <p className="text-gray-500 text-sm leading-relaxed">
@@ -96,11 +96,11 @@ export default function Features() {
 
                 {/* Sent */}
                 <div className="flex justify-end">
-                  <div className="bg-blue-500 rounded-2xl rounded-tr-sm px-4 py-3 max-w-[85%]">
+                  <div className="bg-[#35AFF4] rounded-2xl rounded-tr-sm px-4 py-3 max-w-[85%]">
                     <p className="text-sm text-white">
                       Just got busy! Had a late lunch, logging it now 😊
                     </p>
-                    <p className="text-xs text-blue-200 mt-1">2:31 PM</p>
+                    <p className="text-xs text-sky-100 mt-1">2:31 PM</p>
                   </div>
                 </div>
 
@@ -127,10 +127,10 @@ export default function Features() {
             <div className="border border-gray-200 rounded-2xl p-6 flex flex-col gap-4">
               <div className="grid grid-cols-2 gap-4">
 
-                <div className="bg-blue-500 rounded-2xl p-5">
+                <div className="bg-[#35AFF4] rounded-2xl p-5">
                   <p className="text-3xl font-bold text-white">7.4</p>
-                  <p className="text-blue-200 text-sm mt-1">hrs sleep</p>
-                  <p className="text-blue-200 text-xs mt-2">↑ 12% this week</p>
+                  <p className="text-sky-100 text-sm mt-1">hrs sleep</p>
+                  <p className="text-sky-100 text-xs mt-2">↑ 12% this week</p>
                 </div>
 
                 <div className="bg-white border border-gray-100 rounded-2xl p-5">

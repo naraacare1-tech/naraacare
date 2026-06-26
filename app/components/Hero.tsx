@@ -205,7 +205,7 @@ export default function Hero() {
           className="max-w-2xl mx-auto mt-16"
         >
           {submitted ? (
-            <div className="bg-blue-50 border border-blue-200 text-blue-700 rounded-2xl py-4 px-6 text-center">
+            <div className="bg-sky-50 border border-sky-200 text-[#35AFF4] rounded-2xl py-4 px-6 text-center">
               🎉 Thanks for joining the waitlist!
             </div>
           ) : (
@@ -220,12 +220,12 @@ export default function Hero() {
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="your@email.com"
                   required
-                  className="w-full sm:w-[550px] px-6 py-4 rounded-full border border-gray-200 bg-white text-sm text-gray-700 placeholder-gray-400 outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-100 transition"
+                  className="w-full sm:w-[550px] px-6 py-4 rounded-full border border-gray-200 bg-white text-sm text-gray-700 placeholder-gray-400 outline-none focus:border-[#35AFF4] focus:ring-2 focus:ring-sky-100 transition"
                 />
 
                 <button
                   type="submit"
-                  className="flex items-center justify-center gap-2 bg-blue-500 hover:bg-blue-600 text-white text-sm font-medium px-8 py-4 rounded-full whitespace-nowrap"
+                  className="flex items-center justify-center gap-2 bg-[#35AFF4] hover:bg-[#35AFF4]/90 text-white text-sm font-medium px-8 py-4 rounded-full whitespace-nowrap"
                 >
                   Reserve my spot
                   <ArrowRight size={16} />
