@@ -12,7 +12,7 @@ export default function Footer() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2" aria-label="Go to home page">
             <Image
-              src="/logo.png/Logo.jpg"
+              src="/logo.png/Logo.jpeg"
               alt="NaraaCare"
               width={32}
               height={32}

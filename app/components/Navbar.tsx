@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const logoSrc = "/logo.png/Logo.jpg";
+  const logoSrc = "/logo.png/Logo.jpeg";
   const buttonClassName =
     "inline-flex items-center justify-center bg-[#35AFF4] hover:bg-[#35AFF4]/90 text-white text-sm font-medium px-5 py-2.5 rounded-full transition";
 
