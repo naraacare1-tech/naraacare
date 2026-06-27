@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import emailjs from "@emailjs/browser";
 import { ArrowRight } from "lucide-react";
 
 export default function CTA() {
@@ -62,6 +63,14 @@ export default function CTA() {
           mode: "no-cors",
         }
       );
+
+      await emailjs.send(
+        "service_4q5v0ik",
+        "template_h7fe5cb",
+        { to_email: email },
+        "NydgOvpXfhbbA96pN"
+      );
+
       setSubmitted(true);
     } catch (err) {
       console.error("Error:", err);
