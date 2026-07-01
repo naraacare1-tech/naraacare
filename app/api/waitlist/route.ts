@@ -23,6 +23,12 @@ export async function POST(req: NextRequest) {
 
     const rawText = await response.text();
     let data: Record<string, unknown> = {};
+    const normalizedText = rawText.toLowerCase();
+    const duplicateDetected =
+      normalizedText.includes("duplicate") ||
+      normalizedText.includes("already registered") ||
+      normalizedText.includes("already on the waitlist") ||
+      normalizedText.includes("already exists");
 
     try {
       data = JSON.parse(rawText);
@@ -30,13 +36,17 @@ export async function POST(req: NextRequest) {
       data = { success: false, message: rawText || "Unexpected response from waitlist service." };
     }
 
+    const message =
+      typeof data.message === "string" && data.message.trim()
+        ? data.message
+        : duplicateDetected
+          ? "This email is already on the waitlist! 🎉"
+          : "Something went wrong. Please try again.";
+
     return NextResponse.json({
-      success: data.success === true,
-      duplicate: Boolean(data.duplicate),
-      message:
-        typeof data.message === "string"
-          ? data.message
-          : "Something went wrong. Please try again.",
+      success: duplicateDetected ? false : data.success === true,
+      duplicate: duplicateDetected || Boolean(data.duplicate),
+      message,
     });
   } catch (error) {
     console.error("Waitlist API error:", error);

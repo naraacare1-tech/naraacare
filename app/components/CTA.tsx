@@ -62,10 +62,14 @@ export default function CTA() {
       });
 
       const data = await response.json();
+      const duplicateMessage = "This email is already on the waitlist! 🎉";
+      const isDuplicate =
+        Boolean(data?.duplicate) ||
+        /already/.test((data?.message || "").toLowerCase());
 
       if (!response.ok || !data.success) {
-        if (data.duplicate) {
-          setError("This email is already on the waitlist! 🎉");
+        if (isDuplicate) {
+          setError(duplicateMessage);
           return;
         }
 
