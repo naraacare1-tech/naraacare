@@ -54,15 +54,23 @@ export default function CTA() {
     }
 
     try {
-      await fetch(
-        "https://script.google.com/macros/s/AKfycbzmkVZZtd92PQOn4BQvJXHdne3oGOactsiLHfvUfbuu_EiCInbyw-OH0EzeGrzX1qMq/exec",
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ email }),
-          mode: "no-cors",
+      const response = await fetch("/api/waitlist", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok || !data.success) {
+        if (data.duplicate) {
+          setError("This email is already on the waitlist! 🎉");
+          return;
         }
-      );
+
+        setError(data.message || "Something went wrong. Please try again.");
+        return;
+      }
 
       await emailjs.send(
         "service_4q5v0ik",
@@ -74,7 +82,7 @@ export default function CTA() {
       setSubmitted(true);
     } catch (err) {
       console.error("Error:", err);
-      setSubmitted(true);
+      setError("Something went wrong. Please try again.");
     }
   };
 
