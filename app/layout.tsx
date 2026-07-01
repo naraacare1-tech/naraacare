@@ -16,6 +16,9 @@ const dmSerifDisplay = DM_Serif_Display({
 export const metadata: Metadata = {
   title: "NaraaCare",
   description: "Personalized health insights for you and the people who care about you.",
+  icons: {
+    icon: "/logo.png/Logo.jpeg",
+  },
 };
 
 export default function RootLayout({
