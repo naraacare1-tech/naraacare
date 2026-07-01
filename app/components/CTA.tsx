@@ -46,6 +46,7 @@ export default function CTA() {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setError("");
+    setSubmitted(false);
 
     const validation = isValidEmail(email);
     if (!validation.valid) {
